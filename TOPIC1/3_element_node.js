@@ -11,5 +11,3 @@ console.log(myTag.textContent); // 태그 부분은 제외하고 text만 리턴�
 console.log(myTag.outerHTML)
 
 // Topic1 - CH2 - 11부터 START.
-
-
