@@ -3,13 +3,13 @@ const todoClass = document.querySelector('.today');
 
 // 요소 노드 추가하기
 // 1. 요소 노드 만들기 : document.createElement('태그이름')
-const addLi = todoClass.createElement('li');
+const addLi = document.createElement('li');
 
 // 2. 요소 노드 추가하기 : textContent, innerHTML, ...
 addLi.textContent = '처음';
 
 // 3. 요소 노드 추가하기 : prepend, append, after, before
-todoClass.append(addLi)
+// todoClass.append(addLi); // 여기서 안됨. 왜지?
 
 // const toDoList = document.querySelector('');
 
