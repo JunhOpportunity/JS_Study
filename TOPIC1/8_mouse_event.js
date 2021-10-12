@@ -10,10 +10,11 @@ MouseEvent.button
 //  1 : 마우스 휠
 //  2 : 마우스 오른쪽 버튼
 
+
 MouseEvent.type
 // click : 마우스 왼쪽 버튼을 눌렀을 때
 // contextmenu : 마우스 오른쪽 버튼을 눌렀을 때
-// dblclick : 동일한 위치에서 빠르게 두 번 click 할 때
+// dblclick : 동일한 위치에서 빠르게 두 번 click 할 때 주의**)db'l'click 이다!!!!!!!!!!!!!!!!!!!!!!!!!
 // mousedown : 마우스 버튼을 누른 순간
 // mouseup : 마우스 버튼을 눌렀다가 뗀 순간
 
