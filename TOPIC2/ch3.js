@@ -38,5 +38,40 @@ btn.addEventListener('click', function() {
     console.log("It's real time function");
 })();
 
+// 즉시 실행 함수의 활용
+(function init() {
+    // 프로그램이 실행 될 때 기본적으로 동작할 코드
+})();
+
+
+//==============================================================//
+// 콜백 함수 : 다른 함수의 파라미터에 전달된 함수
+// 고차 함수 : 함수를 리턴하는 함수
+function getPrintHi() {
+    return function () {
+        console.log("Hi!");
+    };
+};
+const sayHi = getPrintHi();
+sayHi();
+
+getPrintHi()(); // 고차 함수는 이렇게 괄호 두 개를 사용해서 바로 사용 가능.
+
+
+//==============================================================//
+// Parameter
+// null 값을 받을 경우 null 을 아규먼트로 사용함.
+// undefined 의 경우에는 적지 않은 것과 같다.
+function funcnama(parameter) {
+    console.log('/');
+}
+functuibname('argument')
+
+// 이런 파라미터도 있다.
+function defaultTest(x, y = x + 3) {
+    console.log(x, y);
+}
+defaultTest(2); // 두 번째 파라미터를 입력하지 않을 경우 연산해서 출력
+defaultTest(2, 3); // 두 번째 파라미터를 입력할 경우 입력한 값 출력
 
 
