@@ -55,3 +55,49 @@ const test = {
 
 
 //==============================================================//
+// 구조 분해 - 배열
+const rank = ['가', '나', '다', '라', '마'];
+
+const mackbook = rank[0];
+const ipad = rank[1];
+const airpods = rank[2];
+const coupon = rank[3];
+
+// 위 코드들을 한 줄로 줄여서 각각 할당할 수 있음.
+// 반드시 대입 연산자 오른쪽에 있는 것은 배열이어야함.
+// 만약 배열의 값의 개수가 할당받을 변수들의 개수보다 적다면 undefind가 할당됨.
+const [mackbook, ipad, airpods, coupon] = rank;
+
+// 이렇게 작성하면 남아있는 것들 모두 할당 가능
+const [mackbook, ipad, airpods, ...coupon] = rank;
+
+// 교환도 가능함. temp 없이!!
+let imack = 'son';
+let pad = 'meenoi';
+
+[imack, pad] = [pad, imack]
+//=> 이제 imack에 meenoi, pad에 son 저장.
+//==============================================================//
+
+
+//==============================================================//
+// 구조 분해 - 객체
+const objectPractice = {
+    time: '11:51',
+    date: '21.10.19',
+    temperture: '25',
+}
+
+const time = objectPractice.time;
+const date = objectPractice.date;
+
+// 프로퍼티 네임과 변수 이름이 같은 경우 이렇게 줄일 수 있음.
+const {time, date} = objectPractice;
+
+// 새로운 변수 이름을 저장할 수 있다.
+// objectPractice 객체 속 temperture 프로퍼티를 tem 변수에 저장.
+// 이 방법은 주로 객체 안에서 프로퍼티 네임이 '문자열'로 되어있는 경우에 매우 유용
+const {temperture: tem} = objectPractice;
+
+
+
