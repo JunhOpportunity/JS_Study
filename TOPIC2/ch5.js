@@ -85,3 +85,4 @@ console.log(numbers_not_sort);
 // reverse : 배열의 순서를 뒤집음.
 numbers_not_sort.reverse();
 console.log(numbers_not_sort);
+//==============================================================//
